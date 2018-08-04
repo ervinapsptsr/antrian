@@ -557,7 +557,25 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="m-portlet__head-title">
 												<h1 class="m-portlet__head-text m--font-light"> Organization Role </h1>
 												<br> <br>
-												
+												<div class="Multiselect__Wrapper___Bgi6r">
+													<div class="Multiselect__Frame___1lLd_">
+														<ul class="Multiselect__TagList__3ra7y"> </ul>
+														<input placeholder="enter names or email addresses, comma separated" value="" class="Multiselect__Input___KNE-5" size="100" style="width: 200%;">
+
+													</div>
+												</div>
+												<select id="single-optgroups" multiple>
+												  <optgroup label="JavaScript">
+													<option value="value 1">Angular</option>
+													<option value="value 2">React</option>
+													<option value="value 3">Vue</option>
+												  </optgroup>
+												  <optgroup label="CSS">
+													<option value="value 4">Bootstrap</option>
+													<option value="value 5">Foundation</option>
+													<option value="value 6">Bulma</option>
+												  </optgroup>
+												</select>
 												
 											</table>
 												<br><br><br><br>
@@ -671,6 +689,20 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 @section scripts {
-
+ <script type="text/javascript">
+ new SlimSelect({
+    select: '#demo'
+    placeholder: 'Placeholder Text Here',
+    showSearch: false, // shows search field
+    searchText: 'Sorry couldnt find anything',
+    beforeOnChange: (info) => {
+      console.log(info)
+      return false // this will stop propagation
+    }
+    onChange: (info) => {
+      console.log(info)
+    }
+})
+</script>
 }
 
